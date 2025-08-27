@@ -1,0 +1,55 @@
+<head>
+
+</head>
+
+<body>
+    <html>
+        <p>Andrew Ton That</p>
+        <p>ahtontha@ucsc.edu</p>
+        <p>1844884</p>
+        <p>3/17/2024</p>
+    
+        <h1>Programming Assignment 5</h1>
+        <h1>Game Library/Review/Showcase</h1>
+    
+        <h2>Description</h2>
+        <p>This is an implementation of an idea that I have had for a while now. This project serves as a way I might be able to post personal reviews of games I have played.</p>
+        <p>This project is a "library" of various games that I have played. The user can scroll through the library to explore these games.</p>
+        <p>When scrolling through the library, game cases modeled after the typical case that video game CDs come in will fly past the user.</p>
+        <p>If the user wants to take a closer look at one of the games, they just have to click on the game case object, and that will bring that specific case closer to the camera.</p>
+        <p>When inspecting the cases, a text box would appear to the right that contained my personal thoughts/reviews/ratings/jokes of the game in question.</p>
+
+
+        <h2>Implementation</h2>
+        <p>The most important library used in this project is Three.js. This library handles all of the heavy lifting for the graphics and rendering.</p>
+        <p>Compared to working directly with WebGL, using Three.js is much much easier, since all of the rendering/modeling/projection/viewing code has already been written for you. All you have to do is to build your scene.</p>
+        <p>The second most important library used is tween.js. This is a library that provides animateable interpolation curves that can be used to animate all kinds of things.</p>
+        <p>I used tween.js to handle the rotations and translations of the various models on the screen. In particular, I made liberal use of the Exponential curve when handling the position animations of the objects, since that curve provided the kind of motion I was really going for when envisioning this project.</p>
+        <p>Each game case model is made of a simple cube with adjusted proportions. The textures were pulled off of the internet and pasted onto the proper sides of the cube to convey the appearance of a game case.</p>
+
+
+        <h2>Credits</h2>
+        <p>Credits to the developers of the games that I featured in this project, whose artwork I used for the textures of the game cases.</p>
+        <p>Credits to the various Three.js/tween.js/js tutorials are found in the code where used.</p>
+    
+        <h2>Relevant Files</h2>
+        <a href="./index.html">index.html</a>
+        <a href="./code/main.js">code/main.js</a>
+    
+        <h2>Instructions/Tips</h2>
+        <p>To scroll through the "library" of games, simply use the scroll wheel on the mouse or an equivalent input. This will allow you to look through the library with cool animations for each game case as you scroll.</p>
+        <p>To select a game case for closer viewing, simply click on the desired game. This will bring the game case close to the camera for better viewing.</p>
+        <p>While inspecting each game case, a short blurb containing my thoughts about the game will appear to the right of the game case.</p>
+
+        
+        <h2>Screenshots</h2>
+        <img src="thumbnail.jpg">
+
+        <h2>Animation</h2>
+        <video controls>
+            <source src="animation.mp4" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+        
+    </html>
+</body>
