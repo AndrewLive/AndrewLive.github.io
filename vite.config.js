@@ -5,4 +5,5 @@ export default defineConfig({
     build: {
       target: 'esnext'
     },
+    base: "/game-showcase",
 })

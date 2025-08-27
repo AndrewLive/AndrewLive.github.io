@@ -1,5 +1,6 @@
 {
   "name": "gamelibrary",
+  "homepage": "https://AndrewLive.github.io/game-showcase/",
   "version": "1.0.0",
   "description": "Game library showcase project",
   "main": "index.js",
@@ -10,12 +11,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tweenjs/tween.js": "^23.1.1",
+    "gh-pages": "^6.3.0",
     "three": "^0.162.0"
   },
   "devDependencies": {
